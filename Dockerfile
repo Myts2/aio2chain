@@ -2,7 +2,7 @@ FROM muslcc/x86_64:x86_64-linux-musl AS build
 
 RUN apk upgrade -U -a
 
-RUN apk add make git patch texinfo
+RUN apk add make git patch texinfo file
 WORKDIR /opt
 RUN git clone https://github.com/richfelker/musl-cross-make
 
